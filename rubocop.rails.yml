@@ -1,0 +1,45 @@
+# Relaxed.Ruby.Style
+#copied from: https://github.com/solidusio/solidus/blob/master/.rubocop.yml
+require:
+  - rubocop-rails
+
+inherit_from: './rubocop.yml'
+
+AllCops:
+  Exclude:
+    # Auto-generated
+    - 'bin/**/*'
+    - 'db/schema.rb'
+    - 'db/migrate/*.rb'
+
+Rails/DynamicFindBy:
+  Whitelist:
+    - find_by_param
+    - find_by_param!
+Rails/FilePath:
+  # Can't understand why "Rails.root.join('tmp', 'contact.csv') is not correct"
+  Enabled: false
+
+Rails/HasManyOrHasOneDependent:
+  # TODO: enable true and fix all
+  Enabled: false
+
+Rails/Validation:
+  # TODO: enable true and fix all
+  Enabled: false
+
+Rails/RedundantForeignKey:
+  # TODO: to check
+  Enabled: false
+
+Rails/RakeEnvironment:
+  # TODO: to check
+  Enabled: false
+
+Rails/LexicallyScopedActionFilter:
+  # TODO: to check
+  Enabled: false
+
+
+Rails/OutputSafety:
+  Enabled: false
