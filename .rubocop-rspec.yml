@@ -1,0 +1,21 @@
+# Relaxed.Ruby.Style
+#copied from: https://github.com/solidusio/solidus/blob/master/.rubocop.yml
+require:
+  - rubocop-rspec
+
+TargetRubyVersion: 2.7
+NewCops: enable
+
+
+# RSpec config
+#
+#RSpec/ImplicitExpect:
+#  EnforcedStyle: should
+#
+#RSpec/ExampleLength:
+#  Max: 20
+#
+#RSpec/MultipleExpectations:
+#  # Max: 1
+#  Exclude:
+#  - 'spec/system/**/*'
