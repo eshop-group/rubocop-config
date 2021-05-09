@@ -6,9 +6,9 @@ require:
 AllCops:
   Exclude:
     # Auto-generated
-    - 'bin/**/*'
-    - 'db/schema.rb'
-    - 'db/migrate/*.rb'
+    - "bin/**/*"
+    - "db/schema.rb"
+    - "db/migrate/*.rb"
 
 Rails/DynamicFindBy:
   Whitelist:
@@ -35,9 +35,13 @@ Rails/RakeEnvironment:
   Enabled: false
 
 Rails/LexicallyScopedActionFilter:
-  # TODO: to check
   Enabled: false
 
-
 Rails/OutputSafety:
+  Enabled: false
+
+Rails/NotNullColumn:
+  Enabled: false
+
+Rails/ReflectionClassName:
   Enabled: false

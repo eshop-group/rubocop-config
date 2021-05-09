@@ -82,8 +82,8 @@ Layout/FirstArrayElementIndentation:
 Layout/FirstHashElementIndentation:
   Enabled: false
 
-Layout/HashAlignment:
-  Enabled: false
+Layout/ArgumentAlignment:
+ EnforcedStyle: with_first_argument
 
 Style/TrailingCommaInArguments:
   Enabled: false
